@@ -6,16 +6,24 @@ char cstring[] = "#include<stdio.h>\n#include<string.h>\n#include<stdbool.h>\n\n
 char filename[] = "template.c";
 char path[] = "./";
 char language[] = "c";
+char extension[] = ".c";
 
 FILE *fileptr;
-
-int main(){
+int main(int argc, char *argv[]){
 	
-	printf("%s\n", cstring);
-	fileptr = fopen(filename, "w");
+	int arraySize = sizeof(*argv) / sizeof(char);
+	printf ("%d\n", arraySize);
+	for (int i = 0; i < argc; i++){
+
+		printf("%d, %s\n", argc,argv[i]);
+	}
+	
+	strcat(argv[1], extension); 
+	fileptr = fopen(argv[1], "w");
 	fprintf(fileptr, "%s", cstring);
 	fclose(fileptr);
 	return 0;
 
 	
 }
+
