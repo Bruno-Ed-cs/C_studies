@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     strcpy(boiler.language, argv[1]);
     strcpy(boiler.extension, ".c");
     strcpy(boiler.plate, cstring);
-
+                                                
     if (argv[3] != NULL) {
         for (int i = 0; i < strlen(argv[3]); i++) {
             path[i] = argv[3][i];

@@ -19,9 +19,9 @@ void *memory_array[8] = {&x, &y, &z, sexy_mon, &my_age, &is_bi, &is_gay, &is_str
 int array_size = sizeof(memory_array) / sizeof(memory_array[0]);
 
 int main() {
-    printf("%d,\n", sizeof(memory_array));
-    printf("%d\n", sizeof(memory_array[0]));
-    printf("%d\n", *((int *)memory_array[0]);
+    printf("%ln\n", sizeof(memory_array));
+    printf("%ln\n", sizeof(memory_array[0]));
+    printf("%ln\n", *((int *)memory_array[0]);
 
     for (int i = 0; i < array_size; i++) {
         void *element = memory_array[i];
