@@ -11,9 +11,9 @@ char language[] = "c";
 char extensionC[] = ".c";
 
 struct boilerplate {
-    char language[10];
-    char extension[10];
-    char plate[500];
+    char language[50];
+    char extension[50];
+    char plate[1000];
 };
 
 FILE *fileptr = NULL;
