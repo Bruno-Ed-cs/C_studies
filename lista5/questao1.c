@@ -15,8 +15,7 @@ int main(){
             printf("NULL\n");
             continue;
         } else if (input % 2 == 0){
-
-            printf("EVEN ");
+            printf("EVEN");
         } else if (input % 2 != 0) {
             
             printf("ODD ");
