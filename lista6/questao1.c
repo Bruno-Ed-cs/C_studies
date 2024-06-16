@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define LEN 3
+#define LEN 3 
 
 int main(){
 
     int numbers[LEN], sorted[LEN], buffer = 0, ordenadas;
     bool running = true;
+
+    printf("numbers length = %ld\n", sizeof(numbers) / sizeof(numbers[0]));
 
     for (int i = 0; i < LEN; i++){
 
